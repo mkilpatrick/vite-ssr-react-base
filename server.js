@@ -63,6 +63,7 @@ export async function createServer(
   app.use('*', async (req, res) => {
     try {
       const url = req.originalUrl
+      console.log(url);
 
       let template, render
       if (!isProd) {

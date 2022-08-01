@@ -7,8 +7,8 @@
   </head>
   <body>
     <div id="app"><!--app-html--></div>
-    <script type="module" src="/src/entry-client.jsx"></script>
-    <!-- <script type="module">
+    <!-- <script type="module" src="/src/entry-client.jsx"></script> -->
+    <script type="module">
       const pages = import.meta.glob('./pages/*.jsx', { eager: true })
 
       const routes = Object.keys(pages).map((path) => {
@@ -24,6 +24,6 @@
         document.getElementById('app'),
         routes['pages/About.jsx'].component
       )
-    </script> -->
+    </script>
   </body>
 </html>
